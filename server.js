@@ -1,8 +1,10 @@
 "use strict";
 exports.__esModule = true;
-var express_1 = require("express");
+//importiamo la libreria express che serve per far funzionare il server
+var express = require("express");
 require("express-async-errors");
-var app = (0, express_1["default"])();
+//creiamo una istanza di express assegnando l'esecuzione ad "app"
+var app = express();
 app.get("/", function (request, response) {
     response.send("Up and running!");
 });
